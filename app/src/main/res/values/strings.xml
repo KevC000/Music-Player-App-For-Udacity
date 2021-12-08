@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="queue_textview">Queue</string>
+    <string name="current_song_textview">Current</string>
+    <string name="Shop_textview">Store</string>
+    <string name="library_textview">Library</string>
+    <string name="search_hint_textview">search</string>
+    <string name="buy_button">BUY</string>
+</resources>
