@@ -15,14 +15,12 @@ import java.util.ArrayList;
 
 public class StoreActivity extends AppCompatActivity {
 
-    public static ArrayList<Song> storeSongs;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
         //ArrayList of available songs
-        storeSongs = new ArrayList<Song>();
+        ArrayList<Song> storeSongs = new ArrayList<Song>();
         storeSongs.add(new Song("Not Today", "BTS", "4:51", R.drawable.not_today,"https://www.amazon.com/dp/B0756QQCRJ/ref=dm_ws_tlw_trk1"));
         storeSongs.add(new Song("SAIL", "AWolnation", "4:09",R.drawable.sail,"https://www.amazon.com/dp/B08XC5TZ2R/ref=dm_ws_tlw_trk1"));
         storeSongs.add(new Song("Burn It Down", "Linkin Park", "3:54",R.drawable.burn_it_down,"https://www.amazon.com/dp/B008B3H6M8/ref=dm_ws_tlw_trk1"));
@@ -39,11 +37,6 @@ public class StoreActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listview_store);
         listView.setAdapter(adapter);
 
-    }
-
-    //getter for the array list
-    public static ArrayList<Song> getStoreSongs(){
-        return storeSongs;
     }
 
 }

@@ -23,26 +23,6 @@ public class Song {
         this.link=link;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
-
     public String getName() {
         return name;
     }

@@ -9,15 +9,13 @@ import java.util.ArrayList;
 
 public class LibraryActivity extends AppCompatActivity {
 
-    private static ArrayList<Song> librarySongs;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
         //ArrayList of Songs in library
-        librarySongs = new ArrayList<Song>();
+        ArrayList<Song> librarySongs = new ArrayList<Song>();
         librarySongs.add(new Song("Baby Shark","PinkFong","1:00",R.drawable.baby_shark));
         librarySongs.add(new Song("Beat it","Michael Jackson","7:39",R.drawable.beat_it));
         librarySongs.add(new Song("Why Why","Shannon Williams","5:49",R.drawable.why_why));
@@ -30,7 +28,4 @@ public class LibraryActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-    public static ArrayList<Song> getLibrarySongs() {
-        return librarySongs;
-    }
 }
