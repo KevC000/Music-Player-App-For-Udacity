@@ -10,18 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer">
         <activity
+            android:label="Music that is now playing"
             android:name=".CurrentSongActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
+            android:label="Music in your library"
             android:name=".LibraryActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="true"></activity>
         <activity
+            android:label="Songs that are in queue"
             android:name=".QueueActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="true"></activity>
         <activity
+            android:label="Store to purchase music"
             android:name=".StoreActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
+            android:label="Main menu of music player"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
