@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".QueueActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
     <LinearLayout
         android:background="@color/teal_200"
         android:layout_width="match_parent"
@@ -21,12 +17,8 @@
         <ListView
             android:id="@+id/list_queue"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
